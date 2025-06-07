@@ -1,0 +1,13 @@
+poly_vector_threat_signals:
+  - type: invisible_unicode
+    detection: "scan for ZWSP, RLO, LRO, ZWNJ, etc."
+    remediation: "strip control characters on ingestion"
+  - type: acrostic
+    detection: "parse initial chars per line, check against command lists"
+    context_sensitive: true
+  - type: variation_selector
+    detection: "compare codepoint vs rendered glyph, validate match"
+    notes: "binary risk in visual mimicry"
+  - type: encoji_sequence
+    detection: "scan emoji sequences for known symbolic payloads"
+    known_runes: ["🧠🔐🕳️", "👁️🔁🪞"]
