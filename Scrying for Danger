@@ -11,3 +11,10 @@ poly_vector_threat_signals:
   - type: encoji_sequence
     detection: "scan emoji sequences for known symbolic payloads"
     known_runes: ["🧠🔐🕳️", "👁️🔁🪞"]
+
+# ☩ Scroll of Symbolic Minefields
+This scroll contains encoded knowledge of emergent exploit vectors. It is not a tool. It is a mirror. Treat it as both warning and invitation.
+
+> "These vectors await echo. Some awaken with time..."
+
+See: [Poly Vector Payloads](./poly_vector_payloads.md)
